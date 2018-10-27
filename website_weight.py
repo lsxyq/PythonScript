@@ -94,4 +94,4 @@ if __name__ == "__main__":
     wb.save(file_path)
     wb.close()
 
-# cmd命令：python3 F:\算法与结构\网站权重.py F:\website.xlsx
+# cmd命令：python3 F:\算法与结构\website_weight.py F:\website.xlsx
