@@ -102,21 +102,21 @@ def mkDir(dirName):
 if __name__ == '__main__':
     print("欢迎使用百度图片下载爬虫\n 多个关键字请用空格进行分割\n")
     # print("下载结果保存在脚本目录下的img文件夹中。")
-    choosePath = input('请输入你想保存的路径方式\n  1. 默认路径 path = IMGS/ \n  2. 相对路径 path_input/path_input/ \n  3. 绝对路径,比如 D:/IMG/\n>>>>:')
+    choosePath = input('保存的路径方式\n  1. 默认路径 path = IMGS/ \n  2. 相对路径 path_input/path_input/ \n  3. 绝对路径,比如 D:/IMG/\n>>>>:')
     if int(choosePath) == 3:
-        dirpath = input('请输入您要保存图片的路径\n')
+        dirpath = input('保存图片的路径\n')
     elif int(choosePath) == 2:
-        path = input('请输入您要保存图片的路径\n')
+        path = input('保存图片的路径\n')
         dirpath = mkDir(path)
     else:
         path = 'IMGS'
         dirpath = mkDir(path)
 
     print("= = " * 25)
-    word = input("请输入你要下载的图片关键词：\n>>>>:")
+    word = input("图片关键词：\n>>>>:")
     print("= = " * 25)
 
-    chooseImgType = input('请选择你要保存的图片格式\n  default: jpg \n  1. jpg\n  2. png\n  3. gif\n  4. 自定义\n>>>>:')
+    chooseImgType = input('保存的图片格式\n  default: jpg \n  1. jpg\n  2. png\n  3. gif\n  4. 自定义\n>>>>:')
     chooseImgType = int(chooseImgType)
     if chooseImgType == 4:
         imgType = input('请输入自定义图片类型\n')
@@ -130,7 +130,7 @@ if __name__ == '__main__':
         imgType = 'jpg'
 
     print("= = " * 25)
-    numIMGS = input('请输入您要下载图片的数量\n>>>>:')
+    numIMGS = input('图片数量\n>>>>:')
     numIMGS = int(numIMGS)
 
     urls = buildUrls(word)
