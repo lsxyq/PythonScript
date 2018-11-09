@@ -161,12 +161,12 @@ server    邮件服务器
 sender    发送方
 receiver  收件人（列表格式，多个收件人）
 """
-username = "18358467482@139.com"
-password = '359287416q'
+username = "xxxx9.com"
+password = 'xxxx
 subject = '测试邮件'
 server = 'smtp.139.com'
-sender = '18358467482@139.com'
-receiver = ['454922491@qq.com']
+sender = 'xxx@139.com'
+receiver = ['xxx@qq.com']
 
 if __name__ == '__main__':
     set = Settings(username, password, subject, server, sender, receiver)
